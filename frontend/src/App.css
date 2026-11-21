@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: #18191c;
+  color: #f4f4f5;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.appHeader {
+  background: #222328;
+  border: 1px solid #32343c;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.appTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.appSubtitle {
+  font-size: 14px;
+  color: #a1a1aa;
+}
+
+.navBar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.navLink {
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1px solid #32343c;
+  background: #1b1c20;
+  color: #d4d4d8;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.navLink:hover {
+  border-color: #52525b;
+  color: #ffffff;
+}
+
+.navLinkActive {
+  background: #f4f4f5;
+  border-color: #f4f4f5;
+  color: #18181b;
+}
+
+.navLinkActive:hover {
+  color: #18181b;
+}
+
+.overallBox {
+  background: #1b1c20;
+  border: 1px solid #2c2e35;
+  border-radius: 12px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.overallHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.overallLabel {
+  color: #d4d4d8;
+}
+
+.overallValue {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.overallSquares {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 6px;
+}
+
+.overallSquare {
+  height: 12px;
+  border-radius: 4px;
+  background: #27272a;
+  border: 1px solid #383840;
+}
+
+.overallSquareFilled {
+  background: #f4f4f5;
+  border-color: #f4f4f5;
+}
+
+.pageContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pageHeaderRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.goalsColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.narrowPage {
+  max-width: 520px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.detailsPage {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.detailsLayout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 24px;
+  align-items: start;
+}
+
+.goalCardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.goalCardFooter {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.detailsLink,
+.backLink {
+  color: #d4d4d8;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #32343c;
+  background: #1b1c20;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.detailsLink:hover,
+.backLink:hover {
+  color: #ffffff;
+  border-color: #71717a;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.formActions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.label {
+  font-size: 13px;
+  color: #d4d4d8;
+}
+
+.input {
+  padding: 9px 12px;
+  border-radius: 10px;
+  border: 1px solid #3f3f46;
+  background: #1b1c20;
+  color: #f4f4f5;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #a1a1aa;
+}
+
+.errorText {
+  font-size: 12px;
+  color: #fca5a5;
+  background: #3b2828;
+  border: 1px solid #7f1d1d;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.emptyGoals {
+  background: #222328;
+  border: 1px dashed #32343c;
+  border-radius: 14px;
+  padding: 32px 20px;
+  text-align: center;
+  color: #a1a1aa;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.emptyActions {
+  display: flex;
+  justify-content: center;
+}
+
+.notFoundBody {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.mutedText {
+  font-size: 14px;
+  color: #a1a1aa;
+}
+
+@media (max-width: 840px) {
+  .detailsLayout {
+    grid-template-columns: 1fr;
+  }
+}
